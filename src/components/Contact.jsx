@@ -1,10 +1,8 @@
-import React from "react";
-
 const Contact = () => {
   return (
-    <div>
+    <section>
       <h1>Contact section</h1>
-    </div>
+    </section>
   );
 };
 
