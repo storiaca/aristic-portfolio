@@ -24,7 +24,7 @@
 
 @layer components {
   .header {
-    @apply fixed top-[0] left-[0] w-full px-[9%] py-8 bg-transparent flex justify-between items-center [transition:0.3s];
+    @apply fixed top-[0] left-[0] w-full px-[9%] py-8 bg-transparent flex justify-between items-center [transition:0.3s] z-10;
     .logo {
       @apply text-[2.5rem] text-customWhiteText font-semibold;
     }
