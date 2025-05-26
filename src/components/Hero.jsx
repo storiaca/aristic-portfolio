@@ -1,5 +1,6 @@
 import { IconContext } from "react-icons";
 import { BiLogoLinkedin } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -17,17 +18,17 @@ const Hero = () => {
           websites for modern digital needs.
         </p>
         <div className="btn-box">
-          <a href="#" className="btn">
-            Hire Me
+          <a href="#skills" className="btn">
+            Skills
           </a>
-          <a href="#" className="btn">
-            Let's Talk
+          <a href="#projects" className="btn">
+            Projects
           </a>
         </div>
       </div>
 
       <div className="home-sci">
-        <a href="#">
+        {/* <a href="#">
           <IconContext.Provider
             value={{
               color: "red",
@@ -38,12 +39,15 @@ const Hero = () => {
               <BiLogoLinkedin />
             </div>
           </IconContext.Provider>
-        </a>
-        <a href="#">
-          <i className="bx bxl-twitter"></i>
-        </a>
-        <a href="#">
+        </a> */}
+        <a
+          href="https://www.linkedin.com/in/aleksandar-ristic-dev/"
+          target="_blank"
+        >
           <i className="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://github.com/storiaca" target="_blank">
+          <i className="bx bxl-github"></i>
         </a>
       </div>
 
