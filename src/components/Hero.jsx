@@ -1,4 +1,5 @@
-import React from "react";
+import { IconContext } from "react-icons";
+import { BiLogoLinkedin } from "react-icons/bi";
 
 const Hero = () => {
   return (
@@ -27,7 +28,16 @@ const Hero = () => {
 
       <div className="home-sci">
         <a href="#">
-          <i className="bx bxl-facebook"></i>
+          <IconContext.Provider
+            value={{
+              color: "red",
+              className: "w-10 h-10",
+            }}
+          >
+            <div>
+              <BiLogoLinkedin />
+            </div>
+          </IconContext.Provider>
         </a>
         <a href="#">
           <i className="bx bxl-twitter"></i>
