@@ -1,0 +1,50 @@
+/* Skills */
+.skills {
+  min-height: auto;
+  padding-bottom: 12rem;
+  background: var(--bg-color);
+}
+
+.skills .heading {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.skills .heading span {
+  color: var(--main-color);
+}
+
+.skills .skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+  max-width: 95rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skills-row .skills-column {
+  flex: 1 1 23.5%;
+  display: flex;
+}
+
+.skills-column .title {
+  font-size: 2.5rem;
+}
+
+.skills-box .skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+  position: relative;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.6rem;
+  padding: 0.8rem 1.5rem;
+  z-index: 1;
+  overflow: hidden;
+  p {
+    font-size: 1.3rem;
+  }
+}

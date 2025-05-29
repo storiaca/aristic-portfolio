@@ -1,15 +1,17 @@
-import aleksandar from "../assets/Aleksandar-Ristic.jpg";
+import aleksandar from "../../assets/Aleksandar-Ristic.jpg";
+import classes from "./About.module.css";
+
 const About = () => {
   return (
-    <section className="about" id="about">
-      <h2 className="heading">
+    <section className={classes.about} id="about">
+      <h2 className={classes.heading}>
         About <span>Me</span>
       </h2>
-      <div className="about-img">
-        <img src={aleksandar} alt="Abou image" />
-        <span className="circle-spin"></span>
+      <div className={classes.aboutImg}>
+        <img src={aleksandar} alt="Aleksanadr Ristic" />
+        <span className={classes.circleSpin}></span>
       </div>
-      <div className="about-content">
+      <div className={classes.aboutContent}>
         <h3>Experience Builder!</h3>
         <p>
           I’m a creative problem-solver with a passion for building intuitive
@@ -20,6 +22,11 @@ const About = () => {
           love of learning, I constantly seek new ways to refine my craft – and
           find moments of peace in nature’s rhythms. Let’s collaborate on
           something meaningful.
+        </p>
+        <p>
+          I am a dedicated frontend developer with expertise in React and
+          WordPress, delivering high-quality, responsive, and user-focused
+          websites for modern digital needs.
         </p>
       </div>
     </section>

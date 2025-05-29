@@ -1,7 +1,7 @@
 import zomont from "../assets/zomont.png";
 import xoGame from "../assets/xo-game.png";
 
-const Projects = () => {
+export default function ProjectCards() {
   return (
     <section className="projects" id="projects">
       <h2 className="heading">
@@ -97,6 +97,4 @@ const Projects = () => {
       </div>
     </section>
   );
-};
-
-export default Projects;
+}
