@@ -59,4 +59,13 @@
       @apply hidden xl:block absolute top-[0] right-[0] w-[45%] h-full bg-transparent [transition:3s] hover:bg-mainDarkBg hover:opacity-80;
     }
   }
+  .projects {
+    @apply min-h-[auto] pb-48 bg-secondDarkBg px-[9%];
+    .heading {
+      @apply text-[5rem] mb-12 text-center;
+      span {
+        @apply text-mainBlue;
+      }
+    }
+  }
 }

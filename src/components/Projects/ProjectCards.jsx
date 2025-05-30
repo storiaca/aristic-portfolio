@@ -81,15 +81,15 @@ export default function ProjectCards() {
 
   return (
     <>
-      <motion.h1
-        className="text-4xl font-bold text-center mb-8 text-[#00abf0]"
+      <motion.h2
+        className="heading"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
       >
-        My Projects
-      </motion.h1>
+        My <span>Projects</span>
+      </motion.h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <motion.div
