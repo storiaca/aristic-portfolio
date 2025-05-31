@@ -1,11 +1,10 @@
-import { useState } from "react";
 import { IconContext } from "react-icons";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { BsGithub } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
+
 const Header = () => {
-  const [iconStyle, setIconStyle] = useState({ color: "#00abf0" });
   return (
     <header className="header">
       <h1 className="logo">Aleksandar Ristic.</h1>

@@ -31,7 +31,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="home-imgHover"></div>
+      <div className="home-img_hover"></div>
     </section>
   );
 };

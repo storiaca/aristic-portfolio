@@ -55,7 +55,7 @@
         @apply text-[1.6rem] my-8 mx-[0];
       }
     }
-    .home-imgHover {
+    .home-img_hover {
       @apply hidden xl:block absolute top-[0] right-[0] w-[45%] h-full bg-transparent [transition:3s] hover:bg-mainDarkBg hover:opacity-80;
     }
   }
@@ -64,6 +64,40 @@
     .heading {
       @apply text-[5rem] mb-12 text-center;
       span {
+        @apply text-mainBlue;
+      }
+    }
+  }
+  .footer {
+    @apply flex items-center flex-wrap px-[9%] py-8 bg-mainDarkBg;
+    .footer-text {
+      p {
+        @apply text-[1.6rem];
+      }
+    }
+    .footer-icon_top {
+      @apply ml-auto mt-4 md:mt-0;
+      a {
+        @apply relative inline-flex justify-center items-center p-[0.8rem] bg-mainBlue border-[0.2rem] border-solid border-mainBlue rounded-[0.6rem] overflow-hidden text-customWhiteText transition-colors duration-500;
+      }
+
+      a::before {
+        @apply content-[""] absolute top-0 left-0 w-0 h-full bg-mainDarkBg transition-all duration-500;
+      }
+
+      a:hover::before {
+        @apply w-full;
+      }
+
+      a .icon {
+        @apply relative w-6 h-6 text-customWhiteText transition-colors duration-500 z-10;
+      }
+
+      a:hover {
+        @apply text-mainBlue;
+      }
+
+      a:hover .icon {
         @apply text-mainBlue;
       }
     }
