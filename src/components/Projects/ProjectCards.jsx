@@ -9,16 +9,17 @@ const projects = [
   {
     id: 1,
     image: zomont,
-    title: "Zomont",
-    shortDescription: "This is a short description of project one.",
+    title: "Zomont D.O.O.",
+    shortDescription:
+      "Zomont is a interior furnishing company, project built with:",
     details: {
       situation:
-        "A global clean energy provider needed two frontend portals: one for clients to manage their energy usage, and another for internal account managers.",
-      task: "Build responsive, real-time dashboards and a shared UI component library, ensuring data integrity and performance at scale.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
+      task: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt",
       action:
-        "Developed an internal component library using Material-UI, enabling design consistency across portals. Built Highcharts dashboards with live telemetry data from IoT sensors. Created a modular Redux (Saga) architecture to support asynchronous flows and caching. Designed responsive, print-friendly invoice views with downloadable PDF generation. Integrated Jenkins CI for automated testing and deployment.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
       result:
-        "Reduced duplicate code by 50% via shared component usage. Enabled customers to self-serve reports, cutting support tickets by 30%. Streamlined portal performance with lazy loading, reducing TTI by 40%.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil,",
       technologies: [
         "WordPress",
         "ACF",
@@ -26,29 +27,29 @@ const projects = [
         "JavaScript",
         "Custom Theme",
       ],
-      liveUrl: "(Enterprise Portal)",
+      liveUrl: "https://zomont.rs/",
       github: "(Private Repo)",
     },
-    link: "https://example.com/project-one",
+    link: "https://zomont.rs/",
   },
   {
     id: 2,
     image: xoGame,
     title: "X/O Game",
-    shortDescription: "This is a short description of project two.",
+    shortDescription: "Simple XO game, project built with:",
     details: {
       situation:
-        "A global clean energy provider needed two frontend portals: one for clients to manage their energy usage, and another for internal account managers.",
-      task: "Build responsive, real-time dashboards and a shared UI component library, ensuring data integrity and performance at scale.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
+      task: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit",
       action:
-        "Developed an internal component library using Material-UI, enabling design consistency across portals. Built Highcharts dashboards with live telemetry data from IoT sensors. Created a modular Redux (Saga) architecture to support asynchronous flows and caching. Designed responsive, print-friendly invoice views with downloadable PDF generation. Integrated Jenkins CI for automated testing and deployment.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
       result:
-        "Reduced duplicate code by 50% via shared component usage. Enabled customers to self-serve reports, cutting support tickets by 30%. Streamlined portal performance with lazy loading, reducing TTI by 40%.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit",
       technologies: ["React", "TypeScript", "Tailwind"],
-      liveUrl: "(Enterprise Portal)",
-      github: "(Private Repo)",
+      liveUrl: "https://react-tic-tac-toe-n7nn.vercel.app/",
+      github: "https://github.com/storiaca/react-tic-tac-toe",
     },
-    link: "https://example.com/project-two",
+    link: "https://react-tic-tac-toe-n7nn.vercel.app/",
   },
   {
     id: 3,
@@ -57,12 +58,12 @@ const projects = [
     shortDescription: "This is a short description of project three.",
     details: {
       situation:
-        "A global clean energy provider needed two frontend portals: one for clients to manage their energy usage, and another for internal account managers.",
-      task: "Build responsive, real-time dashboards and a shared UI component library, ensuring data integrity and performance at scale.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
+      task: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit.",
       action:
-        "Developed an internal component library using Material-UI, enabling design consistency across portals. Built Highcharts dashboards with live telemetry data from IoT sensors. Created a modular Redux (Saga) architecture to support asynchronous flows and caching. Designed responsive, print-friendly invoice views with downloadable PDF generation. Integrated Jenkins CI for automated testing and deployment.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
       result:
-        "Reduced duplicate code by 50% via shared component usage. Enabled customers to self-serve reports, cutting support tickets by 30%. Streamlined portal performance with lazy loading, reducing TTI by 40%.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
       technologies: [
         "WordPress",
         "ACF",
@@ -118,7 +119,7 @@ export default function ProjectCards() {
               <h2 className="project-info_title">{project.title}</h2>
               <p className="project-info_text">{project.shortDescription}</p>
               <ul className="project-info_technologies">
-                {project.details.technologies.map((tech) => (
+                {project.details?.technologies.map((tech) => (
                   <li key={tech} className="pi-tech">
                     {tech}
                   </li>

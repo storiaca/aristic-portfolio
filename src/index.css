@@ -29,6 +29,9 @@
     .logo {
       @apply text-[2.7rem] text-customWhiteText font-semibold;
     }
+    .navbar {
+      @apply mt-4 md:mt-0;
+    }
   }
   .header.sticky {
     @apply bg-secondDarkBg shadow-md;
@@ -119,16 +122,16 @@
             @apply text-[1.9rem] sm:text-[2.2rem] lg:text-[3rem] font-semibold mb-4 text-mainBlue;
           }
           .project-info_text {
-            @apply text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] mb-4 text-customWhiteText;
+            @apply text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] mb-4 text-customWhiteText;
           }
           .project-info_technologies {
-            @apply flex flex-wrap gap-2 my-6;
+            @apply flex flex-wrap gap-2 mb-6 mt-0;
             .pi-tech {
-              @apply bg-white text-secondDarkBg text-[1.2rem] sm:text-[1.4rem] font-medium px-3 py-1 rounded;
+              @apply bg-white text-secondDarkBg text-[1.2rem] sm:text-[1.4rem] font-medium px-3 pt-[4px] pb-[2px] rounded;
             }
           }
           .project-info_links {
-            @apply flex  justify-between gap-4 items-center mt-auto;
+            @apply flex justify-between gap-4 items-center mt-auto;
             .btn {
               @apply relative px-4 pt-[8px] pb-[6px] inline-flex justify-center items-center w-auto md:px-0 md:w-48 h-full border-[0.2rem] rounded-lg text-[1.1rem] sm:text-[1.2rem] lg:text-[1.4rem] font-semibold tracking-[0.1rem] z-[1] overflow-hidden transition-all duration-500;
               &:hover {
@@ -170,6 +173,48 @@
       }
     }
   }
+  .project-modal {
+    @apply fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-50 p-2;
+    .project-modal-wrap {
+      @apply bg-secondDarkBg rounded-xl p-4 sm:p-6 md:p-8 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl w-full relative overflow-y-auto max-h-[80vh] shadow-xl;
+      .pm-wrap-button {
+        @apply absolute top-2 right-2 text-customWhiteText text-2xl hover:text-mainBlue transition;
+      }
+      .pm-wrap-title {
+        @apply text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-mainBlue;
+      }
+      .pm-wrap-text {
+        @apply text-sm sm:text-base md:text-lg space-y-2 text-customWhiteText;
+        p {
+          span {
+            @apply font-semibold;
+            a {
+              @apply underline hover:text-mainBlue;
+            }
+          }
+        }
+      }
+      .pm-wrap-close {
+        @apply mt-4 flex justify-end;
+        button {
+          @apply bg-mainBlue text-secondDarkBg px-4 py-2 rounded overflow-hidden transition-all duration-500;
+        }
+
+        button:hover {
+          @apply text-secondDarkBg;
+        }
+
+        button::before {
+          content: "";
+          @apply absolute top-0 left-0 w-0 h-full bg-secondDarkBg z-[-1] transition-all duration-500;
+        }
+
+        button:hover::before {
+          @apply w-full;
+        }
+      }
+    }
+  }
   .footer {
     @apply flex items-center flex-wrap px-6 md:px-[9%] py-8 bg-mainDarkBg;
     .footer-text {
@@ -178,7 +223,7 @@
       }
     }
     .footer-icon_top {
-      @apply ml-auto mt-4 md:mt-0;
+      @apply ml-auto;
       a {
         @apply relative inline-flex justify-center items-center p-[0.8rem] bg-mainBlue border-[0.2rem] border-solid border-mainBlue rounded-[0.6rem] overflow-hidden text-customWhiteText transition-colors duration-500;
       }
