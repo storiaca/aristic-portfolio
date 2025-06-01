@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { IconContext } from "react-icons";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
@@ -5,8 +6,22 @@ import { BsGithub } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 
 const Header = () => {
+  const [bgColor, setBgColor] = useState(false);
+
+  useEffect(() => {
+    const handleChangeBgColor = () => {
+      setBgColor(window.scrollY > 45);
+    };
+
+    window.addEventListener("scroll", handleChangeBgColor);
+
+    return () => {
+      window.removeEventListener("scroll", handleChangeBgColor);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={bgColor ? "header sticky" : "header"}>
       <h1 className="logo">Aleksandar Ristic.</h1>
       <nav className="navbar">
         <a

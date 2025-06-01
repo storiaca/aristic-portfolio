@@ -5,7 +5,7 @@ const Hero = () => {
         <h1>
           Hi I'm <span>Aleksandar Ristic</span>
         </h1>
-        <div className="text-animate">
+        <div className="text-transparent">
           <h2>Frontend Developer</h2>
         </div>
         <p>

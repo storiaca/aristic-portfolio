@@ -24,13 +24,13 @@
 
 @layer components {
   .header {
-    @apply fixed top-[0] left-[0] w-full px-[9%] flex-col py-8 bg-transparent flex justify-between items-center [transition:0.3s] z-10 md:flex-row;
+    @apply fixed top-[0] left-[0] w-full px-[9%] flex-col py-8 bg-transparent flex justify-between items-center overflow-hidden z-10 md:flex-row transition-colors duration-500 ease-in-out;
     .logo {
       @apply text-[2.7rem] text-customWhiteText font-semibold;
     }
   }
   .header.sticky {
-    @apply bg-yellowgreen;
+    @apply bg-secondDarkBg;
   }
 
   .home {
@@ -44,7 +44,7 @@
           @apply text-customWhiteText;
         }
       }
-      .text-animate {
+      .text-transparent {
         @apply relative w-full md:w-[32.8rem];
         h2 {
           -webkit-text-stroke: 0.7px #ededed;
@@ -65,6 +65,24 @@
       @apply text-[5rem] mb-12 text-center;
       span {
         @apply text-mainBlue;
+      }
+    }
+    .projects-list {
+      @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8;
+      .project-item {
+        @apply bg-secondDarkBg rounded-2xl shadow-lg overflow-hidden border-[0.2rem] border-[solid] border-mainBlue transition-transform;
+        .project-image {
+          @apply w-full h-64 object-cover;
+        }
+        .project-info {
+          @apply p-4;
+          .project-info_title {
+            @apply text-2xl font-semibold mb-2 text-mainBlue;
+          }
+          .project-info_text {
+            @apply text-sm mb-4 text-customWhiteText;
+          }
+        }
       }
     }
   }

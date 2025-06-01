@@ -112,7 +112,7 @@
   width: 100%;
 }
 
-.home-sci {
+/* .home-sci {
   position: absolute;
   bottom: 4rem;
   width: 100px;
@@ -155,7 +155,7 @@
 
 .home-sci a:hover::before {
   width: 100%;
-}
+} */
 
 /* .home-imgHover {
   position: absolute;

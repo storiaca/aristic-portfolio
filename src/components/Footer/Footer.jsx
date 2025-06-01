@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-text">
-        <p>Copyright &copy; 2025 by Aleksandar Ristic | All Rights Reserved.</p>
+        <p>Copyright &copy; 2025 by Aleksandar Ristic</p>
       </div>
-      <div className="footer-icon_top group">
+      <div className="footer-icon_top">
         <a href="#home">
           <IconContext.Provider
             value={{

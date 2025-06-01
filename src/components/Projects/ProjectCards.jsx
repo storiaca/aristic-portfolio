@@ -90,11 +90,11 @@ export default function ProjectCards() {
       >
         My <span>Projects</span>
       </motion.h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="projects-list">
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
-            className="bg-[#112e42] rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform"
+            className="project-item"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -103,16 +103,14 @@ export default function ProjectCards() {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="project-image"
             />
-            <div className="p-4">
-              <h2 className="text-2xl font-semibold mb-2 text-[#00abf0]">
-                {project.title}
-              </h2>
-              <p className="text-sm mb-4">{project.shortDescription}</p>
+            <div className="project-info">
+              <h2 className="project-info_title">{project.title}</h2>
+              <p className="project-info_text">{project.shortDescription}</p>
               <div className="flex justify-between items-center">
                 <button
-                  className="bg-[#00abf0] text-[#081b29] px-4 py-2 rounded hover:bg-[#00abf0]/80 transition"
+                  className="bg-mainBlue text-[#081b29] px-4 py-2 rounded hover:bg-[#00abf0]/80 transition"
                   onClick={() => setActiveProject(project)}
                 >
                   Read More
@@ -121,10 +119,9 @@ export default function ProjectCards() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="project-card_link border border-mainBlue text-mainBlue px-4 py-2 rounded hover:bg-[#00abf0]/10 transition"
                 >
-                  <button className="border border-[#00abf0] text-[#00abf0] px-4 py-2 rounded hover:bg-[#00abf0]/10 transition">
-                    Visit Site
-                  </button>
+                  Visit Site
                 </a>
               </div>
             </div>
