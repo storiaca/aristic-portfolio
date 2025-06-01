@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="btn-box">
           <a
             href="Aleksandar_Ristic_CV.pdf"
-            className="btn"
+            className="btn primary-btn"
             download="Aleksandar_Ristic_CV.pdf"
           >
             Download CV

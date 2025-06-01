@@ -52,7 +52,7 @@
 }
 
 /* Home / Hero */
-.home-content .btn-box {
+/* .home-content .btn-box {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -110,7 +110,7 @@
 
 .home-content .btn-box .btn:hover::before {
   width: 100%;
-}
+} */
 
 /* .home-sci {
   position: absolute;

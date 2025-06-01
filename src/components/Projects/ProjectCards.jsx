@@ -9,7 +9,7 @@ const projects = [
   {
     id: 1,
     image: zomont,
-    title: "Project One",
+    title: "Zomont",
     shortDescription: "This is a short description of project one.",
     details: {
       situation:
@@ -19,8 +19,13 @@ const projects = [
         "Developed an internal component library using Material-UI, enabling design consistency across portals. Built Highcharts dashboards with live telemetry data from IoT sensors. Created a modular Redux (Saga) architecture to support asynchronous flows and caching. Designed responsive, print-friendly invoice views with downloadable PDF generation. Integrated Jenkins CI for automated testing and deployment.",
       result:
         "Reduced duplicate code by 50% via shared component usage. Enabled customers to self-serve reports, cutting support tickets by 30%. Streamlined portal performance with lazy loading, reducing TTI by 40%.",
-      technologies:
-        "React, TypeScript, Redux (Saga), MUI v4/v5, Highcharts, Jenkins, Luxon",
+      technologies: [
+        "WordPress",
+        "ACF",
+        "Bootstrap",
+        "JavaScript",
+        "Custom Theme",
+      ],
       liveUrl: "(Enterprise Portal)",
       github: "(Private Repo)",
     },
@@ -29,7 +34,7 @@ const projects = [
   {
     id: 2,
     image: xoGame,
-    title: "Project Two",
+    title: "X/O Game",
     shortDescription: "This is a short description of project two.",
     details: {
       situation:
@@ -39,8 +44,7 @@ const projects = [
         "Developed an internal component library using Material-UI, enabling design consistency across portals. Built Highcharts dashboards with live telemetry data from IoT sensors. Created a modular Redux (Saga) architecture to support asynchronous flows and caching. Designed responsive, print-friendly invoice views with downloadable PDF generation. Integrated Jenkins CI for automated testing and deployment.",
       result:
         "Reduced duplicate code by 50% via shared component usage. Enabled customers to self-serve reports, cutting support tickets by 30%. Streamlined portal performance with lazy loading, reducing TTI by 40%.",
-      technologies:
-        "React, TypeScript, Redux (Saga), MUI v4/v5, Highcharts, Jenkins, Luxon",
+      technologies: ["React", "TypeScript", "Tailwind"],
       liveUrl: "(Enterprise Portal)",
       github: "(Private Repo)",
     },
@@ -49,7 +53,7 @@ const projects = [
   {
     id: 3,
     image: zomont,
-    title: "Project Three",
+    title: "Financial Policy Council",
     shortDescription: "This is a short description of project three.",
     details: {
       situation:
@@ -59,8 +63,13 @@ const projects = [
         "Developed an internal component library using Material-UI, enabling design consistency across portals. Built Highcharts dashboards with live telemetry data from IoT sensors. Created a modular Redux (Saga) architecture to support asynchronous flows and caching. Designed responsive, print-friendly invoice views with downloadable PDF generation. Integrated Jenkins CI for automated testing and deployment.",
       result:
         "Reduced duplicate code by 50% via shared component usage. Enabled customers to self-serve reports, cutting support tickets by 30%. Streamlined portal performance with lazy loading, reducing TTI by 40%.",
-      technologies:
-        "React, TypeScript, Redux (Saga), MUI v4/v5, Highcharts, Jenkins, Luxon",
+      technologies: [
+        "WordPress",
+        "ACF",
+        "Bootstrap",
+        "JavaScript",
+        "Custom Theme",
+      ],
       liveUrl: "(Enterprise Portal)",
       github: "(Private Repo)",
     },
@@ -108,9 +117,16 @@ export default function ProjectCards() {
             <div className="project-info">
               <h2 className="project-info_title">{project.title}</h2>
               <p className="project-info_text">{project.shortDescription}</p>
-              <div className="flex justify-between items-center">
+              <ul className="project-info_technologies">
+                {project.details.technologies.map((tech) => (
+                  <li key={tech} className="pi-tech">
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+              <div className="project-info_links">
                 <button
-                  className="bg-mainBlue text-[#081b29] px-4 py-2 rounded hover:bg-[#00abf0]/80 transition"
+                  className="btn primary-btn"
                   onClick={() => setActiveProject(project)}
                 >
                   Read More
@@ -119,7 +135,7 @@ export default function ProjectCards() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="project-card_link border border-mainBlue text-mainBlue px-4 py-2 rounded hover:bg-[#00abf0]/10 transition"
+                  className="btn secondary-btn"
                 >
                   Visit Site
                 </a>
