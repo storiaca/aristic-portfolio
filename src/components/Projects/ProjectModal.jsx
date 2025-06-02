@@ -71,7 +71,9 @@ export default function ProjectModal({ project, onClose }) {
               </p>
             </div>
             <div className="pm-wrap-close">
-              <button onClick={onClose}>Close</button>
+              <button className="btn btn-primary" onClick={onClose}>
+                Close
+              </button>
             </div>
           </motion.div>
         </motion.div>
