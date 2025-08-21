@@ -4,6 +4,7 @@ import ProjectModal from "./ProjectModal";
 
 import zomont from "../../assets/zomont.png";
 import xoGame from "../../assets/xo-game.png";
+import fpcsite from "../../assets/fpc-website.png";
 
 const projects = [
   {
@@ -14,12 +15,12 @@ const projects = [
       "Zomont is a interior furnishing company, project built with:",
     details: {
       situation:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
-      task: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt",
+        "Zomont D.O.O., a manufacturer of aluminum and PVC joinery, needed a modern, SEO-friendly website to showcase products and services.",
+      task: "Design and develop a custom WordPress site with responsive design, easy content management, and clear lead-generation focus.",
       action:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
+        "Developed a custom WordPress theme from scratch using Bootstrap for responsive design. Integrated Advanced Custom Fields (ACF) to allow the client to easily manage content and product listings without technical knowledge. Implemented JavaScript enhancements for smooth UI interactions and better user experience. Optimized the site for SEO, ensuring fast load times and mobile responsiveness.",
       result:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil,",
+        "The final website provided Zomont D.O.O. with a modern, professional, and user-friendly online presence. The new design improved brand credibility, increased customer inquiries through clear CTAs, and made content management significantly easier for the client. The responsive and SEO-optimized structure positioned the company strongly in its local market.",
       technologies: [
         "WordPress",
         "ACF",
@@ -39,12 +40,12 @@ const projects = [
     shortDescription: "Simple XO game, project built with:",
     details: {
       situation:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
-      task: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit",
+        "I wanted to create a small, interactive project to practice React with TypeScript and modern styling using Tailwind CSS. The idea was to implement the classic Tic-Tac-Toe (X/O) game with a clean UI and reusable components.",
+      task: "Build a responsive and interactive web-based Tic-Tac-Toe game that demonstrates component-based design, type safety, and state management.",
       action:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
+        "Developed the game logic and win/draw conditions using TypeScript for strong typing and code safety. Built reusable React components for the game board, cells, and game status. Styled the interface with Tailwind CSS for a clean and responsive design. Deployed the project to Vercel for easy access and live demo",
       result:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit",
+        "Delivered a fully functional, responsive, and visually appealing X/O game. The project served as a hands-on demonstration of React + TypeScript best practices and reinforced skills in UI development, state management, and deployment workflows",
       technologies: ["React", "TypeScript", "Tailwind"],
       liveUrl: "https://react-tic-tac-toe-n7nn.vercel.app/",
       github: "https://github.com/storiaca/react-tic-tac-toe",
@@ -53,17 +54,18 @@ const projects = [
   },
   {
     id: 3,
-    image: zomont,
+    image: fpcsite,
     title: "Financial Policy Council",
-    shortDescription: "This is a short description of project three.",
+    shortDescription:
+      "Financial Policy Council is a nonprofit think tank, project built with:",
     details: {
       situation:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
-      task: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit.",
+        "The Financial Policy Council, a nonprofit think tank, needed a modern and professional website to highlight publications, events, and thought leadership. Their old site lacked structure, was not mobile-friendly, and made it difficult for staff to manage and update content.",
+      task: "Redesign and rebuild the website on WordPress with a custom theme that supports easy content management, clear information hierarchy, and an engaging, responsive design.",
       action:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
+        "Developed a custom WordPress theme using Bootstrap for responsiveness and accessibility. Integrated Advanced Custom Fields (ACF) to give staff simple tools for managing posts, events, and publications. Implemented JavaScript enhancements for interactivity and improved navigation. Optimized site performance and SEO to increase visibility and reach. tructured layouts to highlight articles, research, and upcoming events in a user-friendly way.",
       result:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea, facere, praesentium animi ex libero vero incidunt ullam fugit consequatur quo ut ipsum vitae fugiat nihil voluptates, quam esse eos commodi velit quas fuga porro nobis. Nihil, tempora quae dolor optio natus aut saepe eos velit quibusdam adipisci ex architecto.",
+        "Delivered a professional, responsive, and content-driven website that elevated the organization’s online presence. The new design improved readability, user engagement, and simplified content management, allowing staff to keep the site regularly updated with minimal effort.",
       technologies: [
         "WordPress",
         "ACF",
@@ -71,10 +73,10 @@ const projects = [
         "JavaScript",
         "Custom Theme",
       ],
-      liveUrl: "(Enterprise Portal)",
+      liveUrl: "https://financialpolicycouncil.org/",
       github: "(Private Repo)",
     },
-    link: "https://example.com/project-three",
+    link: "https://financialpolicycouncil.org/",
   },
 ];
 

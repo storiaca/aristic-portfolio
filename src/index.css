@@ -176,16 +176,16 @@
   .project-modal {
     @apply fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-50 p-2;
     .project-modal-wrap {
-      @apply bg-secondDarkBg rounded-xl p-4 sm:p-6 md:p-8 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl w-full relative overflow-y-auto max-h-[80vh] shadow-xl;
+      @apply bg-secondDarkBg rounded-xl p-4 sm:p-6 md:p-8 max-w-3xl sm:max-w-md md:max-w-lg lg:max-w-2xl relative overflow-y-auto max-h-[80vh] shadow-xl;
       .pm-wrap-button {
         @apply absolute top-2 right-2 text-customWhiteText text-2xl hover:text-mainBlue transition;
       }
       .pm-wrap-title {
-        @apply text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-mainBlue;
+        @apply text-3xl font-bold mb-4 text-mainBlue;
       }
       .pm-wrap-text {
-        @apply text-sm sm:text-base md:text-lg space-y-2 text-customWhiteText;
         p {
+          @apply text-2xl mb-3 text-customWhiteText;
           span {
             @apply font-semibold;
             a {

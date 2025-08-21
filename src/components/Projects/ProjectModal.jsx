@@ -47,7 +47,10 @@ export default function ProjectModal({ project, onClose }) {
                 <span>Result:</span> {project.details.result}
               </p>
               <p>
-                <span>Technologies:</span> {project.details.technologies}
+                <span>Technologies:</span>{" "}
+                {Array.isArray(project.details.technologies)
+                  ? project.details.technologies.join(", ")
+                  : project.details.technologies}
               </p>
               <p>
                 <span>Live URL:</span>{" "}
