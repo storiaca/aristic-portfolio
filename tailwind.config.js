@@ -15,6 +15,10 @@ export default {
         customWhiteText: "#EDEDED",
         yellowgreen: "#9ACD32",
       },
+      screens: {
+        portrait: { raw: "(orientation: portrait)" },
+        landscape: { raw: "(orientation: landscape)" },
+      },
     },
   },
   plugins: [],
