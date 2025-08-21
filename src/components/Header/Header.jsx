@@ -60,7 +60,7 @@ const Header = () => {
             </div>
           </IconContext.Provider>
         </a>
-        <a href="mailto:someone@example.com">
+        <a href="mailto:storiaca@gmail.com">
           <IconContext.Provider
             value={{
               className: "icon",
