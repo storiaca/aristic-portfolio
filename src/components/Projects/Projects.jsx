@@ -4,7 +4,6 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <ProjectCards />
-      <img src={states} alt={"States"} />
     </section>
   );
 };
